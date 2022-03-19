@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
-type QuestionProps = {
+export type QuestionProps = {
   question: string;
   response: string;
 };

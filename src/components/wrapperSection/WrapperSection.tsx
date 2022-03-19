@@ -7,6 +7,6 @@ type WrapperSectionProps = PropsWithChildren<{
 export const WrapperSection = (props: WrapperSectionProps) => {
     const {children,isFirst = false} = props
     return (
-        <div className={clsx("w-full h-screen",isFirst && 'pt-32')}>{children}</div>
+        <div className={clsx("w-full",isFirst && 'pt-32')}>{children}</div>
     )
 }
