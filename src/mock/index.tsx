@@ -3,6 +3,7 @@ import { BiNetworkChart } from "react-icons/bi";
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { DiAndroid } from "react-icons/di";
+import { Plan } from "../components/cardPlans/CardPlans";
 
 export const questions = [
   {
@@ -53,4 +54,19 @@ export const benefits: Benefit[] = [
     icon: <IoCallSharp />,
   },
 ];
+
+
+export const plans: Plan[] = [
+
+  { qtd: 10, price: "60,00", price_unit: "6,00", },
+  { qtd: 20, price: "110,00", price_unit: "5,50" },
+  { qtd: 30, price: "130,50", price_unit: "4,35" },
+  { qtd: 40, price: "158,80", price_unit: "3,97" },
+  { qtd: 50, price: "162,50", price_unit: "3,25" },
+  { qtd: 100, price: "235,00", price_unit: "2,35" },
+  { qtd: 150, price: "300,00", price_unit: "2,00" }
+
+]
+
 export const A = () => <div></div>
+

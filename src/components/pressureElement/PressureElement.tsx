@@ -13,11 +13,11 @@ export const PressureElement = (props: PressureElementProps) => {
         "top-0 z-50",
         "w-full py-4 px-20",
         "flex items-center justify-center",
-        "shadow-sm bg-white ",
+        "shadow-sm bg-white",
         fixed ? "fixed" : "absolute"
       )}
     >
-      <div className="text-xl text-center text-gray-600">
+      <div className="lg:text-xl text-center text-gray-600">
         <b>Atenção: </b>
         As promoções contidas nesse site são válidas apenas para o dia de hoje:{" "}
         <b>Domingo, {today()}.</b>

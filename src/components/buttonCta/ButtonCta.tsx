@@ -2,12 +2,13 @@ import { PropsWithChildren } from "react";
 import clsx from "clsx";
 type ButtonCtaProps = PropsWithChildren<{
   theme?: "primary" | "secondary";
+  animate?: boolean
 }>;
 
 export const ButtonCta = (props: ButtonCtaProps) => {
-  const { children, theme = "primary" } = props;
+  const { children, theme = "primary",animate = false } = props;
   return (
-    <div className="pt-10">
+    <div >
       <button
         className={clsx(
           "border-2  rounded-full",
@@ -16,9 +17,8 @@ export const ButtonCta = (props: ButtonCtaProps) => {
           theme === "secondary" &&
             "border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white",
           " font-bold",
-          "px-8 py-4",
-          "animate animate-bounce",
-          " hover:animate-none"
+          "px-8 py-2",
+          animate && "animate animate-bounce hover:animate-none",
         )}
       >
         {children && children}

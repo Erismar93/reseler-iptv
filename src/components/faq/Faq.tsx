@@ -35,7 +35,7 @@ const Question = (props: QuestionProps) => {
         onClick={onShow}
         className="text-xl bg-gray-500 text-white px-8 py-4 w-full flex justify-between rounded"
       >
-        <div>{question}</div>
+        <div className="text-left"> {question}</div>
         <div>{!show ? <FiPlus /> : <FiMinus />}</div>
       </button>
       {show && <div className="bg-gray-200 p-4 text-gray-500">{response}</div>}

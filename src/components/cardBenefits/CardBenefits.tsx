@@ -6,6 +6,7 @@ export type Benefit = {
   description: string;
   icon: ReactNode;
 };
+
 type CardBenefitsProps = {
   benefit: Benefit;
 };

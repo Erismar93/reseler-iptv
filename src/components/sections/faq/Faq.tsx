@@ -15,7 +15,7 @@ export const SectionFaq = (props: SectionFaqProps) => {
             title="Dúvidas"
             subtitle={"Confira aqui algumas dúvidas mais frequentes."}
           />
-          <div className="flex justify-center py-10">
+          <div className="flex justify-center py-10 px-8">
             <Faq questions={questions} />
           </div>
           <div className="flex justify-center">

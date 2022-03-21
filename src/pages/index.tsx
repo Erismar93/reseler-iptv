@@ -5,9 +5,10 @@ import { RemoteControll } from "../components/controllRemote/ControllRemote";
 
 import { SectionFaq } from "../components/sections/faq/Faq";
 import { SectionTitle } from "../components/sections/title/Title";
-import { benefits, questions } from "../mock/index";
+import { benefits, plans, questions } from "../mock/index";
 import { SectionBenefits } from "../components/sections/benefits/Benefits";
 import { Footer } from "../components/footer/Footer";
+import { SectionPlans } from "../components/sections/plans/Plans";
 const Home: NextPage = () => {
   return (
     <>
@@ -17,16 +18,23 @@ const Home: NextPage = () => {
       />
 
       {/* Elements pressure fixed or absolute in top page */}
-      <PressureElement fixed />
+      {/* <PressureElement fixed /> */}
 
       {/* Title landing page and CTA */}
       <SectionTitle />
 
+      {/* Section Benefits */}
       <SectionBenefits benefits={benefits} />
 
+      {/* Section Plans */}
+      <SectionPlans plans={plans} />
+
+      {/* Section FAQ */}
       <SectionFaq questions={questions} />
 
-      <RemoteControll />
+      {/* Section fixed bottom rigth */}
+      {/* <RemoteControll /> */}
+
 
       <Footer />
     </>
