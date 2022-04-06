@@ -11,12 +11,12 @@ export const SectionBenefits = (props: SectionBenefitsProps) => {
   const { benefits } = props;
   return (
     <WrapperSection>
-      <div className="h-full py-10">
+      <div className="h-full space-y-10 py-10 border-b">
         <SectionTitle
           title="Benefícios"
           subtitle={"Confira alguns benefícios que somente nós oferecemos."}
         />
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-10 lg:px-40 p-16">
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {benefits.map((benefit, key) => {
             return <CardBenefits key={key} benefit={benefit} />;
           })}

@@ -6,7 +6,7 @@ type SectionTitleProps = {
 export const SectionTitle = (props: SectionTitleProps) => {
   const { title, subtitle } = props;
   return (
-    <div className="flex flex-col items-center justify-center w-full px-8 pt-20">
+    <div className="flex flex-col items-center justify-center w-full">
       <div className="relative flex items-center justify-center bg-gray-200">
         <div className="absolute text-5xl lg:text-8xl text-gray-200 font-bold">
           {title.toUpperCase()}
