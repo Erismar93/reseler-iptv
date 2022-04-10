@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <>
       <SeoHead
-        title="Revenda TV"
+        title="Iptv Online"
         description="Melhor painel de IPTV do Brasil"
       />
 
