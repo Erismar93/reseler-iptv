@@ -14,7 +14,7 @@ export const SectionBenefits = (props: SectionBenefitsProps) => {
   const generateLinkWhats = createGenerateLinkWhats("5584996760901")
   return (
     <WrapperSection className="bg-gray-900">
-      <div className="h-full space-y-10 py-10">
+      <div className="h-full space-y-10 py-10" id="benefits">
         <SectionTitle
           title="Benefícios"
           subtitle={"Confira alguns benefícios que somente nós oferecemos."}

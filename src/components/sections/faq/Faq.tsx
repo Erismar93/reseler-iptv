@@ -15,7 +15,7 @@ export const SectionFaq = (props: SectionFaqProps) => {
 
   return (
     <WrapperSection className="bg-gray-900">
-      <div className=" space-y-10 py-10">
+      <div className=" space-y-10 py-10" id="faq">
   
         <SectionTitle
           title="Dúvidas"

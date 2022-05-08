@@ -3,16 +3,16 @@ import { Button } from "../button/Button";
 
 const options: MenuItemProps[] = [
   {
-    label: "Planos",
-    href: "plans",
-  },
-  {
     label: "Benefícios",
-    href: "plans",
+    href: "#benefits",
   },
   {
-    label: "Revenda",
-    href: "plans",
+    label: "Planos",
+    href: "#plans",
+  },
+  {
+    label: "Dúvidas",
+    href: "#faq",
   },
 ];
 

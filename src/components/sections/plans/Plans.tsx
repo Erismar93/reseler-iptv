@@ -15,7 +15,7 @@ export const SectionPlans = (props: SectionPlansProps) => {
   const generateLinkWhats = createGenerateLinkWhats("5584996760901")
   return (
     <WrapperSection className="bg-gray-800">
-      <div className="h-full space-y-10 py-10">
+      <div className="h-full space-y-10 py-10" id="plans">
         <SectionTitle
           title="Ofertas"
           subtitle={"Aproveite os preços exclusivos do nosso site e escolha a melhor oferta para você!"}
