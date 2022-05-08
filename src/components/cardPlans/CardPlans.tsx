@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { ReactNode } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { MdOutlineSecurity } from "react-icons/md";
+import { createGenerateLinkWhats } from "../../helpers/generateLinkWhats";
 import { Button } from "../button/Button";
 
 export type Plan = {
@@ -15,6 +16,7 @@ type CardPlansProps = {
 
 export const CardPlans = (props: CardPlansProps) => {
   const { plan } = props;
+  const generateLinkWhats = createGenerateLinkWhats("5584996760901")
   return (
     <li className={clsx(
       "rounded",
@@ -39,7 +41,7 @@ export const CardPlans = (props: CardPlansProps) => {
         <span className="text-center">Liberação do painel é imediata.</span>
       </div>
       
-      <Button rightIcon={<FiArrowRight/>}>QUERO ESSE</Button>
+      <Button href={generateLinkWhats(`Olá, venho do site e gostaria de assinar o plano de ${plan.qtd} créditos por R$ ${plan.price}.`)} rightIcon={<FiArrowRight/>}>QUERO ESSE</Button>
     </li >
   );
 };
