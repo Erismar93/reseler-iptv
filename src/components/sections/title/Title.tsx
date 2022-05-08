@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { BsFillMouse2Fill, BsFillMouseFill } from "react-icons/bs";
-import { FiMousePointer } from "react-icons/fi";
-import { ButtonCta } from "../../buttonCta/ButtonCta";
+import { FiArrowDownRight, FiArrowRight, FiMousePointer } from "react-icons/fi";
+import { Button } from "../../button/Button";
 import { WrapperSection } from "../../wrapperSection/WrapperSection";
 
 export const SectionTitle = () => {
@@ -9,21 +9,23 @@ export const SectionTitle = () => {
     <WrapperSection
       noPadding
       style={{
-        backgroundImage:
-          "url(https://francosolutions.com.br/wp-content/uploads/2020/03/ThinkstockPhotos-599903446.jpg)",
+        backgroundImage: "url(bg/bg-main.jpg)",
 
-        objectFit: 'cover',
-        height: "100vh"
+        objectFit: "cover",
+        height: "100vh",
       }}
       className="relative"
     >
       <div
-        className={clsx("h-full", "flex items-center justify-center bg-black bg-opacity-80 rounded")}
+        className={clsx(
+          "h-full",
+          "flex items-center justify-center bg-black bg-opacity-80 rounded"
+        )}
       >
         <TV />
-        <div className="text-white text-2xl animate-bounce absolute bottom-8 flex w-full justify-center">
-        <BsFillMouseFill />
-      </div>
+        <div className="text-primary text-2xl animate-bounce absolute bottom-8 flex w-full justify-center">
+          <BsFillMouseFill />
+        </div>
       </div>
     </WrapperSection>
   );
@@ -39,14 +41,13 @@ const TV = () => {
         <br />
         completo do país.
       </h1>
-      <span className="text-white text-lg ">
+      <span className="text-primary text-lg ">
         Faça parte do melhor servidor do Brasil.
       </span>
-      <ButtonCta>EU QUERO</ButtonCta>
-     
+      <Button theme="primary" rightIcon={ <FiArrowRight/>}>QUERO CONHECER</Button>
     </div>
-  )
-}
+  );
+};
 
 const TV1 = () => {
   return (
@@ -61,7 +62,7 @@ const TV1 = () => {
       <span className="text-white text-lg text-center">
         Faça parte do melhor servidor do Brasil.
       </span>
-      <ButtonCta>EU QUERO</ButtonCta>
+      <Button>EU QUERO</Button>
     </div>
-  )
-}
+  );
+};

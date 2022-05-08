@@ -1,4 +1,6 @@
-import { ButtonCta } from "../../buttonCta/ButtonCta"
+import { BsWhatsapp } from "react-icons/bs"
+import { FaWhatsapp } from "react-icons/fa"
+import { Button } from "../../button/Button"
 import { Faq, QuestionProps } from "../../faq/Faq"
 import { SectionTitle } from "../../sectionTitle/SectionTitle"
 import { WrapperSection } from "../../wrapperSection/WrapperSection"
@@ -9,7 +11,7 @@ type SectionFaqProps = {
 export const SectionFaq = (props: SectionFaqProps) => {
   const { questions } = props
   return (
-    <WrapperSection className="bg-gray-100">
+    <WrapperSection className="bg-gray-900">
       <div className=" space-y-10 py-10">
   
         <SectionTitle
@@ -20,7 +22,7 @@ export const SectionFaq = (props: SectionFaqProps) => {
           <Faq questions={questions} />
         </div>
         <div className="flex justify-center">
-          <ButtonCta theme="secondary">ENTRAR EM CONTATO</ButtonCta>
+          <Button theme="primary" rightIcon={<BsWhatsapp/>}>ENTRAR EM CONTATO</Button>
         </div>
         </div>
 

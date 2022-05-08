@@ -7,14 +7,13 @@ export const SectionTitle = (props: SectionTitleProps) => {
   const { title, subtitle } = props;
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <div className="relative flex items-center justify-center bg-gray-200">
-        <div className="absolute text-5xl lg:text-8xl text-gray-200 font-bold">
+      <div className="flex items-center justify-center bg-gray-200">
+        <div className="absolute text-5xl lg:text-6xl text-white font-bold">
           {title.toUpperCase()}
         </div>
-        <h1 className="absolute font-bold text-xl lg:text-2xl text-gray-800">{title.toUpperCase()}</h1>
       </div>
 
-      <span className="mt-10 text-gray-800 lg:text-xl">{subtitle}</span>
+      <span className="mt-8 text-primary lg:text-xl">{subtitle}</span>
     </div>
   );
 };

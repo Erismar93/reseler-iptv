@@ -33,12 +33,12 @@ const Question = (props: QuestionProps) => {
     <li>
       <button
         onClick={onShow}
-        className="text-xl bg-gray-500 text-white px-8 py-4 w-full flex justify-between rounded"
+        className="text-xl bg-gray-800 text-white px-8 py-4 w-full flex justify-between rounded"
       >
         <div className="text-left"> {question}</div>
         <div>{!show ? <FiPlus /> : <FiMinus />}</div>
       </button>
-      {show && <div className="bg-gray-200 p-4 text-gray-500">{response}</div>}
+      {show && <div className="bg-gray-700 p-4 text-gray-200">{response}</div>}
     </li>
   );
 };
