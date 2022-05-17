@@ -9,14 +9,18 @@ import { benefits, plans, questions } from "../mock/index";
 import { SectionBenefits } from "../components/sections/benefits/Benefits";
 import { Footer } from "../components/footer/Footer";
 import { SectionPlans } from "../components/sections/plans/Plans";
+import { Header } from "../components/header/Header";
 const Home: NextPage = () => {
   return (
     <>
       <SeoHead
-        title="Iptv Online"
+        title="Revenda IPTV | Teste Grátis"
         description="Melhor painel de IPTV do Brasil"
       />
 
+      {/* Header */}
+      <Header />
+      
       {/* Elements pressure fixed or absolute in top page */}
       {/* <PressureElement fixed /> */}
 
@@ -34,7 +38,6 @@ const Home: NextPage = () => {
 
       {/* Section fixed bottom rigth */}
       {/* <RemoteControll /> */}
-
 
       <Footer />
     </>
